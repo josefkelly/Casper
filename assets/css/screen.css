@@ -1286,6 +1286,11 @@ body.page-template .post-title {
     color: #dd4b39;
 }
 
+.post-comments {
+    padding: 3rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
 
 /* ==========================================================================
    6. Author profile
