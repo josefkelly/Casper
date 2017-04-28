@@ -17,9 +17,12 @@
         {{author}}
         {{tags prefix=" on "}}
         <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+        <span class="disqus-comment-count" data-disqus-identifier="{{id}}"></span>
     </footer>
 </article>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
 {{pagination}}
+
+<script id="dsq-count-scr" src="//josefkelly.disqus.com/count.js" async></script>
