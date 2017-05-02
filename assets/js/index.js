@@ -21,10 +21,10 @@
         });
 
         $('.post-content img').wrap(function() {
-            return "<a href='" + $(this).attr('src') + "' class='gallery'></a>";
+            return "<a href='" + $(this).attr('src') + "'></a>";
         })
 
-        $('a.gallery').featherlightGallery();
+        baguetteBox.run('.post-content');
 
     });
 
