@@ -20,7 +20,11 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
-        $('.post-content img').featherlightGallery();
+        $('.post-content img').wrap(function() {
+            return "<a href='" + $(this).attr('src') + "' class='gallery'></a>";
+        })
+
+        $('a.gallery').featherlightGallery();
 
     });
 
