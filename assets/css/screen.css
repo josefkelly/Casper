@@ -1299,6 +1299,20 @@ body.page-template .post-title {
     border-top: #EBF2F6 1px solid;
 }
 
+.breakout-content {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.breakout-content iframe {
+    margin: 0;
+    border: 0;
+}
 
 /* ==========================================================================
    6. Author profile
