@@ -42,7 +42,7 @@ async function sleepy() {
 
         $('#dsq-app1').load(function() {
             console.log('loaded iframe')
-            $(this).find('#footer').hide()
+            $(this).contents().find('#footer').hide()
         })
 
     });
