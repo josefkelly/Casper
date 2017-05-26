@@ -27,6 +27,13 @@
         baguetteBox.run('.post-content');
 
         $('#dsq-app1').load(function() {
+            console.log('calling hide function, sleeping')
+
+            await sleep(2000);
+
+            console.log('done sleeping')
+            console.log($(this))
+
             $(this).find('#footer').hide()
         })
 
@@ -64,3 +71,7 @@
 
     };
 })(jQuery);
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
