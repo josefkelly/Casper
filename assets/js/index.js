@@ -3,10 +3,12 @@
  */
 
 function sleep(ms) {
+    console.log('really sleeping')
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function sleepy() {
+    console.log('sleeping....')
     await sleep(2000);
 }
 
@@ -39,6 +41,7 @@ async function sleepy() {
         sleepy()
 
         $('#dsq-app1').load(function() {
+            console.log('loaded iframe')
             $(this).find('#footer').hide()
         })
 
