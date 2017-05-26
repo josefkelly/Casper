@@ -2,6 +2,10 @@
  * Main JS file for Casper behaviours
  */
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 /* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
@@ -71,7 +75,3 @@
 
     };
 })(jQuery);
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
