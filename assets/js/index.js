@@ -34,14 +34,11 @@ async function sleepy() {
 
         baguetteBox.run('.post-content');
 
+        console.log('about to run iframe load')
+
+        sleepy()
+
         $('#dsq-app1').load(function() {
-            console.log('calling hide function, sleeping')
-
-            sleepy()
-
-            console.log('done sleeping')
-            console.log($(this))
-
             $(this).find('#footer').hide()
         })
 
