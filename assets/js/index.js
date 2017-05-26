@@ -26,6 +26,10 @@
 
         baguetteBox.run('.post-content');
 
+        $('#dsq-app1').load(function() {
+            $(this).find('#footer').hide()
+        })
+
     });
 
     // Arctic Scroll by Paul Adam Davis
