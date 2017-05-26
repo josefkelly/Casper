@@ -2,15 +2,19 @@
  * Main JS file for Casper behaviours
  */
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function sleepy() {
+    await sleep(2000);
+}
+
 /* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
 
     var $document = $(document);
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
 
     $document.ready(function () {
 
@@ -33,7 +37,7 @@
         $('#dsq-app1').load(function() {
             console.log('calling hide function, sleeping')
 
-            await sleep(2000);
+            sleepy()
 
             console.log('done sleeping')
             console.log($(this))
