@@ -3,12 +3,10 @@
  */
 
 function sleep(ms) {
-    console.log('really sleeping')
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function sleepy() {
-    console.log('sleeping....')
     await sleep(2000);
 }
 
@@ -36,14 +34,9 @@ async function sleepy() {
 
         baguetteBox.run('.post-content');
 
-        console.log('about to run iframe load')
-
-        sleepy()
-
-        $('#dsq-app1').load(function() {
-            console.log('loaded iframe')
-            $(this).contents().find('#footer').hide()
-        })
+        //$('#dsq-app1').load(function() {
+        //    this.contents().find('#footer').hide()
+        //})
 
     });
 
