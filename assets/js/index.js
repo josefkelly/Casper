@@ -2,14 +2,6 @@
  * Main JS file for Casper behaviours
  */
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function sleepy() {
-    await sleep(2000);
-}
-
 /* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
@@ -33,11 +25,6 @@ async function sleepy() {
         })
 
         baguetteBox.run('.post-content');
-
-        //$('#dsq-app1').load(function() {
-        //    this.contents().find('#footer').hide()
-        //})
-
     });
 
     // Arctic Scroll by Paul Adam Davis

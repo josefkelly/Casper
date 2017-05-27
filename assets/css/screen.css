@@ -1297,11 +1297,17 @@ body.page-template .post-title {
 .post-comments {
     padding: 5rem 0 0 0;
     border-top: #EBF2F6 1px solid;
+    position: relative;
+    bottom: -85px;
+    z-index: 99;
 }
 
 .post-subscribe {
     padding: 5rem 0 0 0;
     border-top: #EBF2F6 1px solid;
+    position: relative;
+    background: #ffffff;
+    z-index: 999;
 }
 
 .breakout-content {
