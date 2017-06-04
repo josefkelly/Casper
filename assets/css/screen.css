@@ -1315,6 +1315,7 @@ body.page-template .post-title {
     width: 100vw;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    margin: 0 0 3em 0;
 }
 
 .breakout-content iframe {
